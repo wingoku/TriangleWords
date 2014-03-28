@@ -47,8 +47,8 @@ for word in myWords:
         #find ascii value
         asciiValue = ord(letter);
 
-        # incrementing asciiValue of current character with ascii value of A=(65)
-        letterSumTotal += (asciiValue+65);
+        # subtracting asciiValue of current character with ascii value of A=(65) to get position of alphabet in 1->26 range
+        letterSumTotal += (asciiValue-65) + 1;
 
     # checking if sum of all letters in the word is in the list containing triangle numbers
     if letterSumTotal in myList:
